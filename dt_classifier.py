@@ -70,8 +70,6 @@ def check(test):
         b = f.read()
     with open(test, "r") as g:
         d = g.read()
-    #with open("pets_gt.csv", "r") as e:
-    #    h = e.read()
         
     training = [i.split(',') for i in b.split("\n")]
     colNums = len(training[0]) #first 0 is cat/dog class; rest is y/n
